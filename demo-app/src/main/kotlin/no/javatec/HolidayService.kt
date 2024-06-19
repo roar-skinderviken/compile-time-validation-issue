@@ -6,7 +6,6 @@ import no.javatec.annotations.DurationPattern
 import java.time.Duration
 
 @Singleton
-@TimeOff("junk")
 open class HolidayService {
 
     @TimeOff("junk")
