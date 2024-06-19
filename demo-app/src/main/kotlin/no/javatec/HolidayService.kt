@@ -2,7 +2,6 @@ package no.javatec
 
 import jakarta.inject.Singleton
 import jakarta.validation.constraints.NotBlank
-import no.javatec.TimeOff
 import no.javatec.annotations.DurationPattern
 import java.time.Duration
 
