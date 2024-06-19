@@ -1,4 +1,4 @@
-package no.javatec
+package no.javatec.annotations
 
 import io.micronaut.core.annotation.AnnotationValue
 import io.micronaut.validation.validator.constraints.ConstraintValidator
@@ -9,6 +9,6 @@ class DurationPatternValidator : ConstraintValidator<DurationPattern, CharSequen
         value: CharSequence?,
         annotationMetadata: AnnotationValue<DurationPattern>,
         context: ConstraintValidatorContext): Boolean {
-        return value == null || value.toString().matches("^P?\\d+D$".toRegex())
+        return value == null || value.toString().matches("^PT?\\d+[SMHD]$".toRegex())
     }
 }
